@@ -1,6 +1,9 @@
 # UV with Heroku and Django
 
-This project uses the UV package manager to manage the dependencies of a Django project and demonstrates deployment to heroku using heroku's container stack (Docker).
+This project demonstrates deploying a django app using the UV package manager to Heroku.
+
+[!IMPORTANT]
+Why? Heroku's python buildpack doesn't support UV at this moment so in order to use UV with Heroku, Heroku's container stack (docker) is required.
 
 ## Deploying to heroku
 
