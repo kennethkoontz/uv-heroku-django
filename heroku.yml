@@ -1,0 +1,6 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: uv run gunicorn project.wsgi:application --log-file - --bind :${PORT}
+
